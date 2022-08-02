@@ -8,7 +8,8 @@ ENV TAG=v0.9.8
 ADD ./sh /sh
 
 RUN apt-get update && \
-    apt-get install -y libssl-dev libicu-dev zip wget && \
+    apt-get install -y libssl-dev libicu-dev zip wget tzdata && \
+    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     chmod -R 755 /sh
