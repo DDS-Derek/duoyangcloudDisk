@@ -14,12 +14,12 @@ else
  chmod 775 /app/Order/webdav
  chmod 775 /app/Order/lux
  # 启动
- echo -e "\033[33m启动webdav \033[0m"
- bash /sh/webdav.sh
- sleep 2
- echo -e "\033[33m启动ftp \033[0m"
- bash /sh/ftp.sh
- sleep 2
+# echo -e "\033[33m启动webdav \033[0m"
+# bash /sh/webdav.sh
+# sleep 2
+# echo -e "\033[33m启动ftp \033[0m"
+# bash /sh/ftp.sh
+# sleep 2
  echo -e "\033[33m启动 \033[0m"
  cd /app
  ./fy.duoyang.cloudDisk
