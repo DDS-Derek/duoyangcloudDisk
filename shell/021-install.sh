@@ -11,5 +11,4 @@ else
  echo -e "\033[36m安装完成 \033[0m"
  touch /install.lock
  echo "安装完成" > /install.lock
- bash /sh/start.sh
 fi
