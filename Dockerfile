@@ -15,9 +15,6 @@ RUN apt-get update && \
 # 程序主体
 COPY ./duoyang.cloudDisk.linux64.${TAG}.zip /duoyang.cloudDisk.linux64.${TAG}.zip
 
-# 启动
-CMD [ "/shell/000-start.sh" ]
-
 # 端口
 EXPOSE 88 6800 2200 2121 2122 2123 2124 2125 2126 2127 2128 2129 2130  
 
