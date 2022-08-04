@@ -1,15 +1,13 @@
-FROM ubuntu:20.04
-#FROM debian:bullseye
+FROM ddsderek/foundations:Ubuntu20.04
 
 # 版本
 ENV TAG=v0.9.8
-ENV TZ=Asia/Shanghai
 
 # 脚本
 ADD ./shell /shell
 
 RUN apt-get update && \
-    apt-get install -y libssl-dev libicu-dev zip wget tzdata && \
+    apt-get install -y libssl-dev libicu-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     chmod -R 755 /shell
